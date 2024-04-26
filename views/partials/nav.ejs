@@ -1,0 +1,13 @@
+<nav>
+    <h3><a href="/">NestJS Auth</a></h3>
+    <ul>
+      <% if (user) { %>
+      <li>Welcome, <%= user.name %></li>
+      <li><a href="/users/logout">Log out</a></li>
+      <% } else { %>
+      <li><a href="/users/login">Log in</a></li>
+      <li><a href="/users/signup" class="btn">Sign up</a></li>
+      <% } %>
+    </ul>
+  </nav>
+  <body>

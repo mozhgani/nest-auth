@@ -1,0 +1,10 @@
+<%- include('./partials/head.ejs') %> <%- include('./partials/nav.ejs') %>
+
+<div class="row container">
+  <% for(let user of users) { %>
+    <p><%= user.name %></p>
+  <% } %>
+</div>
+    
+
+ 
